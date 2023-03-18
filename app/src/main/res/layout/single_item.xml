@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="158dp"
+        android:layout_height="60dp"
+        android:layout_weight="50"
+        android:src="@drawable/writing" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amira Dahache"
+            android:textSize="20sp"
+            android:textColor="#EC0654"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description"
+            android:textSize="16sp"
+            android:text="jj"
+            app:layout_constrainedWidth="true"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:ems="8"
+
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
